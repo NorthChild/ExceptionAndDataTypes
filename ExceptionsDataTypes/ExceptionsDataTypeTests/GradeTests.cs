@@ -11,7 +11,6 @@ namespace ExceptionsDataTypeTests
         {
         }
 
-
         [TestCase(-34)]
         [TestCase(-1)]
         [TestCase(-12)]
