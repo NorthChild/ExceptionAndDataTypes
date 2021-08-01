@@ -20,7 +20,7 @@ namespace ExceptionsDataTypeTests
             Assert.That(()=> Program.Grade(mark), Throws.TypeOf<ArgumentOutOfRangeException>().With.Message.Contains("Allowed range 1-100")); 
         }
 
-        [TestCase(101)]
+        [TestCase(99)]
         [TestCase(150)]
         [TestCase(124134)]
         public void WhenMarkIsGraterThan100_Grade_ThrowsAnArgumentOutOfRangeException(int mark)

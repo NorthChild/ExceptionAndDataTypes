@@ -9,25 +9,55 @@ namespace ExceptionsApp
         static void Main(string[] args)
         {
 
-            var result = 5.50 / 2;
-            var myInt = 5;
-            double nyMun = myInt;
+            //var theInt = 5;
+            //var anotherInt = Convert.ToInt32(theInt);       // conversion 
+
+            //var myDouble = Convert.ToDouble(theInt);        // safe widening 
+
+            //// narrowing (unsafe) with no data loss
+            //var myShort = Convert.ToInt16(theInt);
+            //double myPi = 3.14;
+            //float floatPi = Convert.ToSingle(myPi);
+
+            //double x = 3.14159265359;
+            ////float y = (float)x;
+
+            ////Console.WriteLine(x);
+            ////Console.WriteLine(y);
+
+            //int numCows = 260;
+            //byte myByteCows = Convert.ToByte(numCows);
+
+            //int myBankBalance = -2;
+            //uint myPostBalance = Convert.ToUInt32(myBankBalance);
 
 
-            sbyte num = SByte.MaxValue;
+            ////uint countCows = (uint)numCows;
+            ////byte byteCows = (byte)numCows;
 
-            Console.WriteLine("Byte max: " + num);
+            //Console.WriteLine(Convert.ToString(numCows, 2));
+            //Console.WriteLine(Convert.ToString(byteCows, 2));
 
-            num += 1;
-            Console.WriteLine(num);
+            //int bankBalance = -2;
+            //uint posBalance = (uint)bankBalance;
 
-            128 + 64 + 32 + 8 + 4 + 2 + 1
-
-
-
-
+            //Console.WriteLine(Convert.ToString(bankBalance, 2));
+            //Console.WriteLine(Convert.ToString(posBalance, 2));
 
 
+            //var result = 5.50 / 2;
+            //var myInt = 5;
+            //double nyMun = myInt;
+
+
+            //sbyte num = SByte.MaxValue;
+
+            //Console.WriteLine("Byte max: " + num);
+
+            //num += 1;
+            //Console.WriteLine(num);
+
+            //128 + 64 + 32 + 8 + 4 + 2 + 1
 
             // data types
             //int anInt = 3;          // explicitly typed
@@ -95,11 +125,6 @@ namespace ExceptionsApp
             //        Console.WriteLine(e.Message);
             //    }
 
-
-
-
-
-
             //    try
             //    {
             //        text = File.ReadAllText(fileName);
@@ -120,17 +145,24 @@ namespace ExceptionsApp
 
             //}
 
-            //public static string Grade(int mark)
-            //{
+           
 
-            //    if (mark < 0 || mark > 100)
-            //    {
-            //        throw new ArgumentOutOfRangeException("Mark: " + mark + " Allowed range 1-100");
-            //    }
-
-
-            //    return mark >= 65 ? (mark >= 85 ? "Distinct" : "Pass") : "Fail";
         }
+
+        public static string Grade(int mark)
+        {
+
+            if (mark < 0 || mark > 100)
+            {
+                throw new ArgumentOutOfRangeException("Mark: " + mark + " Allowed range 1-100");
+            }
+
+
+            return mark >= 65 ? (mark >= 85 ? "Distinct" : "Pass") : "Fail";
+        }
+
+
+
 
     }
 }

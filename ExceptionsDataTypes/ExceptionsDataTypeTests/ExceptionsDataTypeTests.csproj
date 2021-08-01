@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-
+	<CheckForOverflowUnderflow> True </CheckForOverflowUnderflow>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
